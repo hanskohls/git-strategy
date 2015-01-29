@@ -30,3 +30,11 @@ git branch -d <branch name>
 // Finally to push this work to the remote repostiory run
 git push
 ```
+
+
+
+
+rebasing
+========
+
+
