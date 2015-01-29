@@ -9,5 +9,9 @@ branching
 
 We will have three branch types live, release candidate and features.
 
-They shall be named live, release-[release-year-number] and feature-[jira-ticket] 
+To create a branch run the following command: 
+
+```
+git branch <branchname>
+```
 
