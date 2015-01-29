@@ -13,5 +13,9 @@ To create a branch run the following command:
 
 ```
 git branch <branchname>
+git checkout <branchname>
+// Make your changes
+git commit -a -m "<commit message>"
+// After committing make some more changes and commit again.
 ```
 
