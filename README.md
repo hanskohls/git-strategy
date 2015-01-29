@@ -17,19 +17,33 @@ git commit -a -m "<commit message>"
 // After committing make some more changes and commit again.
 ```
 
+deleting a branch
+=================
+
+Sometimes a branch is not required anymore and needs to be deleted. To achive this run
+
+```
+git branch -d <branch name>
+```
+
+
 merging
 =======
 
 Once the last commit on a branch has been completed you can merge this branch back to the parent branch.
+When pushing the merged branch to the remote repository we usually want to retain it. The best approach to do this is to
+
+* push all branches if there is no current branch that you do not want to push
+* push the current branch and the specific branch separately.
 
 ```
 git checkout <parent branch name>
 git merge <branch name>
-// If you want to delete the subbranch you can run
-git branch -d <branch name>
 // Finally to push this work to the remote repostiory run
-git push
+// We usually want to retain the feature branches, to push these out the option --all is required.
+git push --all
 ```
+
 
 
 
@@ -60,6 +74,8 @@ Then you merge your work back into the master branch.
             /         \
 A---B-...-AA-----------AB   master
 ```
+
+
 
 
 
