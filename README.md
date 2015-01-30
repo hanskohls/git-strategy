@@ -75,7 +75,15 @@ Then you merge your work back into the master branch.
 A---B-...-AA-----------AB   master
 ```
 
+Rebasing is done using the following commands.
 
+```
+git rebase master feature
+// This may result in some conflicts that need to be resolved. 
+// Resolve them and add the amended files. 
+// then if requried run
+git rebase --continue
+```
 
 
 
